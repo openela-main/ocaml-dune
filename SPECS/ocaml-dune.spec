@@ -12,7 +12,7 @@
 
 Name:           ocaml-dune
 Version:        3.16.0
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Composable build system for OCaml and Reason
 
 # Dune itself is MIT.  Some bundled libraries have a different license:
@@ -598,6 +598,10 @@ cd -
 %files -n ocaml-xdg-devel -f .ofiles-xdg-devel
 
 %changelog
+* Mon Mar 02 2026 Richard W.M. Jones <rjones@redhat.com> - 3.16.0-5
+- Rebuild for CVE-2026-28364
+  Resolves: RHEL-152627
+
 * Wed Oct 30 2024 Troy Dawson <tdawson@redhat.com> - 3.16.0-4
 - Bump release for October 2024 mass rebuild:
   Resolves: RHEL-64018
